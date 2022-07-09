@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #808080;
+}
+
+.keypad{
+    background-color: #BBBBBB;
+    border-radius: 10px;
+    padding: 20px 70px;
+    margin: 20px 50px;
+    /* display: flex; */
+    border-bottom:6px solid #999;
+}
+
+.key-row{
+    display: flex;
+}
+
+.keys{
+    background-color: #444444;
+    margin: 4px;
+    flex-grow: 1;
+    font-size: 18px;
+    width: 65px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px 10px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#backspace{
+    flex-grow: 40;
+}
+
+#tab{
+    flex-grow: 7;
+}
+
+#caps{
+    flex-grow: 8;
+}
+
+#enter{
+    flex-grow: 15;
+}
+
+#shift{
+    flex-grow: 15;
+}
+
+#spacebar{
+    flex-grow: 100;
+}
+
+#arrow{
+    padding-top: 12px;
+}
+
+#windows{
+    flex-grow: 5;
+    padding-left: 6px;
+}
+
+#up, #down{
+    width: 30px;
+}
+
+.keys:hover{
+    font-size: 200%;
+    padding: 5px;
+    box-shadow: 0 0 10px 0 black;
+}
+
+#caps:hover span{
+    display: none;
+}
+
+#caps:hover:before{
+    content: "Caps";
+}
+
+#insert, #prtscr, #shift, #enter, #delete:hover{
+    width: 90px;
+}
+
+#windows:hover{
+    width: 110px;
+    padding-left: 0;
+}
+
+#backspace:hover{
+    width: 150px;
+}
+
+#arrow:hover{
+    padding-top: 0;
+}
